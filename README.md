@@ -3,4 +3,4 @@
 
 
 
-- [stickman](stickman)
+- [stickman](stickman/)
