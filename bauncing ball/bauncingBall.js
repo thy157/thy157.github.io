@@ -4,6 +4,7 @@ function setup() {
   }
   
   let Ycirkel = 0
+  let speed = 1
 
   function draw() {
     background(220);
@@ -13,12 +14,16 @@ function setup() {
     fill('red');
     circle(200,Ycirkel, 50);
 
-    Ycirkel = Ycirkel+1
+    // bevægelsen
+    Ycirkel = Ycirkel + speed
 
-  
+    if (Ycirkel == 380) {
+      speed = -1
+    }
+
+    if (Ycirkel == 0) {
+      speed = 1
+    }
 }
-function move(){
- if (Ycirkel == -200) {
-    Ycirkel= 0
-  }
-} 
+
+ 
