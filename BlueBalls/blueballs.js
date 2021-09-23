@@ -1,14 +1,19 @@
 function setup() {
-    angleMode(DEGREES); // Change the mode to DEGREES
     createCanvas(windowWidth, windowHeight);
-  }
-  let xPos = 200
-  let yPos = 200
-  let radius = 5
-  
-  function draw() {
-      
-      background(220);
-      cirkel(xPos,yPos,radius)
-  }
-  
+}
+//let Ptrue = mouseX > windowWidth/2 || mouseY > windowHeight/2
+
+function draw() {
+    background('white')
+
+    circle(mouseX, mouseY, 50)
+    fill('blue')
+
+    if (mouseX > windowWidth/2 && mouseY > windowHeight/2) {
+        fill('red')
+    } else if (mouseX < windowWidth/2 && mouseY < windowHeight/2) {
+        fill('red')
+    }
+
+
+}
