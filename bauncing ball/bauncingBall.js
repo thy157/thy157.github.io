@@ -3,13 +3,22 @@ function setup() {
     createCanvas(400, 400);
   }
   
+  let Ycirkel = 0
+
   function draw() {
     background(220);
     
+
     // bolden
     fill('red');
-    circle(200, 200, 50);
+    circle(200,Ycirkel, 50);
 
-    //bauncing
-    
+    Ycirkel = Ycirkel+1
+
+  
 }
+function move(){
+ if (Ycirkel == 200) {
+    Ycirkel= 0
+  }
+} 
