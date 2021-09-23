@@ -18,7 +18,7 @@ function setup() {
   
 }
 function move(){
- if (Ycirkel == 200) {
+ if (Ycirkel == -200) {
     Ycirkel= 0
   }
 } 
