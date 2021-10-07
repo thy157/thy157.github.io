@@ -5,4 +5,4 @@
 
 - [stickman](stickman/)
 - [baunsingball](bauncingball/)
-- [farveboldt](blueballs/)
+- [farveboldt](BlueBalls/)
