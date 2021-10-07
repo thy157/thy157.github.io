@@ -4,5 +4,5 @@
 
 
 - [stickman](stickman/)
-- [baunsingball](bauncing ball/)
-- [blueballs](Farveboldt/)
+- [baunsingball](bauncingball/)
+- [farveboldt](blueballs/)
