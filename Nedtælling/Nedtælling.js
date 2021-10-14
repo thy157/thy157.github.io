@@ -1,11 +1,22 @@
 function setup() {
     createCanvas(windowWidth, windowHeight);
+    console.log("hej"); 
 
-    let a = 0
-    let b = 10
+    "højre click, tryk indspeckt(undersøg), gå til console" 
 
-    while (a !== b) {
-        b = b - 1
+    //opgave 1 
+    for (let i = 0; i !== 0; i--) {
+        console.log(i);
+        
     }
-}
+    
+    console.log();
+
+    //opgave 2
+    for (let f = 0; f !== 21; f++) {
+        console.log(f+);
+        
+    }
+
+}  
 
