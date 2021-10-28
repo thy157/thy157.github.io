@@ -3,19 +3,23 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
 }
 
+
 let x1 = 0
 let y1 = 0
-let x2 = 400
-let y2 = 400
+let x2 = 0
+let y2 = 0
 
 function mousePressed() {
-  x1 = mouseX
-  x2 = mouseY
+    x1 = mouseX
+    y1 = mouseY
 }
 
 function mouseReleased() {
- x2 = mouseX
- y2 = mouseY
+    x2 = mouseX
+    y2 = mouseY
 }
-line(x1, y1, x2, y2)
 
+function draw() {
+    background(220)
+    line(x1, y1, x2, y2)
+}
