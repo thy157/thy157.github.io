@@ -1,7 +1,6 @@
 function setup() {
     createCanvas(windowWidth, windowHeight);
 }
-//let Ptrue = mouseX > windowWidth/2 || mouseY > windowHeight/2
 
 function draw() {
     background('white')
