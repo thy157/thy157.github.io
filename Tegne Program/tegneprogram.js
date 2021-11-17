@@ -3,23 +3,33 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
 }
 
+let x1 = [];
+let y1 = [];
+let x2 = [];
+let y2 = [];
 
-let x1 = 0
-let y1 = 0
-let x2 = 0
-let y2 = 0
-
-function mousePressed() {
-    x1 = mouseX
-    y1 = mouseY
+setLastEnd(x,y){
+    let lastIndex = x2.length -1
+    x2[lastIndex] = x
+    y2[lastIndex] = y  
 }
 
-function mouseReleased() {
-    x2 = mouseX
-    y2 = mouseY
+function mousePressed(){
+    let x = mouseX
+    let y = mouseY
+    x1.push(x);
+    y1.push(y);
+    x2.push(x);
+    y2.push(y);
 }
 
-function draw() {
-    background(220)
-    line(x1, y1, x2, y2)
+function mouseReleased(){
+    setLastEnd(mouseX, mouseY)
+}
+
+function draw(){
+    for (let i = 0; i< x1.length; i++) {
+        line(x1[i], y1[i], x2[i], y2[i])
+    }
+    line(x1[i], y1[i], x2[i], y2[i])
 }
